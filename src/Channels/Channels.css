@@ -1,0 +1,309 @@
+/* Channels.css */
+
+.Channels-container {
+    padding: 20px;
+    background-color: #121b22;
+    color: #ffffff;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 550px;
+    height: 100vh;
+    overflow: scroll;
+    
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.top-channels {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 4px 20px;
+}
+
+.top-channels h1 {
+    font-size: 25px;
+    margin: 0;
+}
+
+.channels-icons {
+    font-size: 20px;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.lower-channels {
+    margin-top: 20px;
+    overflow: scroll;
+}
+.Find{
+    font-weight: 100;
+    font-size: 20px;
+}
+.whatspp {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.Whatsapp-image {
+    display: flex;
+    align-items: center;
+}
+
+.Whatsapp-image img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.Whatspp-container {
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+.Top-wheather {
+    display: flex;
+    flex-direction: column;
+}
+
+.Top-wheather h1 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.Top-wheather p {
+    font-size: 14px;
+    color: #ffffff;
+    margin: 5px 0 0;
+}
+
+.camera {
+    display: inline-block;
+    margin-right: 5px;
+}
+.Bottom-wheather{
+    position: relative;
+    left: 15px;
+    top: 4px;
+}
+.Bottom-wheather p {
+    font-size: 15px;
+    color: #ffffff;
+}
+.Bottom-wheather h5{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    align-items: center;display: flex;
+    justify-content: center;
+    background-color: #00ac87;
+    position: relative;
+    top: 5px;
+    left: 7px;
+}
+.channels-list h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.channels-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.channels-list li {
+    display: flex;
+    height: 4.5rem;
+    align-items: center;
+    margin-bottom: 15px;
+    
+}
+
+.channels-list li img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.channels-list li .Bottom {
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    flex-direction: column;
+    border-bottom: 2px solid #6c747c;
+}
+
+.channels-list li h3 {
+    font-size: 20px;
+    font-weight: 100;
+    margin: 0;
+}
+.Text-design{
+    display: flex;
+}
+.gear-icon{
+    position: relative;
+    font-size: 25px;
+    left: 5px;
+    color: #00ac87;
+}
+
+.gear-icon span{
+    position: absolute;
+    top: 0px;
+    color: #fff;
+}
+.channels-list li p {
+    font-size: 15px;
+    color: #ffffff;
+    margin: 0;
+}
+.followers button {
+    width: 6em;
+    background: transparent;
+    border: 1.5px solid #384249;
+    height: 3em;
+    border-radius: 30em;
+    font-size: 15px;
+    font-family: inherit;
+    position: absolute;
+    top: 0.51rem;
+    left: 21rem;
+    overflow: hidden;
+    z-index: 1;
+    color: #00ac87;
+   }
+/* ........................Search................................ */
+/* From Uiverse.io by satyamchaudharydev */
+/* this is a recreation of twitter search in css */
+.form {
+    --input-text-color: #fff;
+    --input-bg-color: #283542;
+    --focus-input-bg-color: transparent;
+    --text-color: #949faa;
+    --active-color: #1b9bee;
+    --width-of-input: 100% ;
+    --inline-padding-of-input: 1.2em;
+    --gap: 0.9rem;
+}
+
+/* form style */
+.form {
+    font-size: 0.9rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    width: var(--width-of-input);
+    position: relative;
+    isolation: isolate;
+   left: -10px;
+}
+
+/* a fancy bg for showing background and border when focus. */
+.fancy-bg {
+    position: absolute;
+    width: 100%;
+    inset: 0;
+    background: var(--input-bg-color);
+    border-radius: 15px;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+/* label styling */
+label {
+    width: 100%;
+    padding: 0.8em;
+    height: 40px;
+    padding-inline: var(--inline-padding-of-input);
+    display: flex;
+    align-items: center;
+}
+
+.search,
+.close-btn {
+    position: absolute;
+}
+
+/* styling search-icon */
+.search {
+    fill: var(--text-color);
+    left: var(--inline-padding-of-input);
+}
+
+/* svg -- size */
+svg {
+    width: 17px;
+    display: block;
+}
+
+/* styling of close button */
+.close-btn {
+    border: none;
+    right: var(--inline-padding-of-input);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 0.1em;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--active-color);
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* styling of input */
+.input {
+    color: var(--input-text-color);
+    width: 100%;
+    margin-inline: min(2em, calc(var(--inline-padding-of-input) + var(--gap)));
+    background: none;
+    border: none;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.input::placeholder {
+    color: var(--text-color)
+}
+
+/* input background change in focus */
+.input:focus~.fancy-bg {
+    border: 1px solid var(--active-color);
+    background: var(--focus-input-bg-color);
+}
+
+/* search icon color change in focus */
+.input:focus~.search {
+    fill: var(--active-color);
+}
+
+/* showing close button when typing */
+.input:valid~.close-btn {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* this is for the default background in input,when selecting autofill options -- you can remove this code if you do not want to override the browser style.  */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+    -webkit-transition-delay: 9999s;
+}

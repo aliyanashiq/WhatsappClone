@@ -1,0 +1,102 @@
+.Sidebar {
+    width: 62px;
+    height: 100vh;
+    background-color: #1f2c34;
+    padding: 10px;
+}
+
+.upper-icons {
+    height: 78vh;
+    display: flex;
+    flex-direction: column;
+}
+.icon-container p{
+    position: absolute;
+    left: 22px;
+    top: 5px;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    padding-top: 2.5px;
+    color: rgb(2, 2, 2);
+    font-weight: 500;
+    font-size: 12px;
+    border-radius: 50%;
+    background-color: #02a784;
+}
+.icon-container h6{
+    position: absolute;
+    left: 28px;
+    top: 9px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #02a784;
+}
+.Icons-left {
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    padding: 9px;
+    border-radius: 50%;
+    color: #a4a9af;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 6px 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for icon background color and icon label */
+.icon-container:hover .Icons-left {
+    background-color: #384249; /* Change background color on hover */
+    color: white; /* Change icon color on hover */
+}
+
+.icon-container:hover .icon-label {
+    opacity: 1;
+    visibility: visible;
+    
+}
+
+/* Active state styling */
+.icon-container.active .Icons-left {
+    background-color: #384249;
+    color: white;
+}
+
+.profile-image {
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+}
+
+/* Position the icon label to the right of the icon */
+.icon-label {
+    position: absolute;
+    left: 53px; /* Adjusted to the right of the icon */
+    white-space: nowrap;
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 18px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 1;
+}
+
+/* Add this class to manage active state in JS */
+.icon-container.active .Icons-left {
+    background-color: #4a555e;
+    color: white;
+}
+
+/* Ensures the container is relatively positioned */
+.icon-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}

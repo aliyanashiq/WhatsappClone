@@ -1,0 +1,241 @@
+.Setting-container {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    height: 100vh; /* Ensure the container takes full height */
+}
+
+/* ............................................................. */
+
+/* Setting.css */
+
+.Setting-container {
+    
+    height: 100vh;
+    background-color: #fff;
+    color: #111;
+}
+
+.top-setting {
+    padding: 20px;
+    
+    background-color: #121b22;
+    height: 9rem;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+/* ...................................................................................... */
+/* From Uiverse.io by satyamchaudharydev */ 
+/* this is a recreation of twitter search in css */
+.form2 {
+    --input-text-color: #fff;
+    --input-bg-color: #283542;
+    --focus-input-bg-color: transparent;
+    --text-color: #949faa;
+    --active-color: #1b9bee;
+    --width-of-input: 100%;
+    --inline-padding-of-input: 1.2em;
+    --gap: 0.9rem;
+  }
+  /* form2 style */
+  .form2 {
+    font-size: 0.9rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    width: var(--width-of-input);
+    position: relative;
+    top: 35px;
+    isolation: isolate;
+  }
+  /* a fancy bg for showing background and border when focus. */
+  .fancy-bg {
+    position: absolute;
+    width: 100%;
+    inset: 0;
+    background: var(--input-bg-color);
+    border-radius: 12px;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+  /* label styling */
+  label {
+    width: 100%;
+    padding: 0.8em;
+    height: 40px;
+    padding-inline: var(--inline-padding-of-input);
+    display: flex;
+    align-items: center;
+  }
+  
+  .search,.close-btn {
+    position: absolute;
+  }
+  /* styling search-icon */
+  .search {
+    fill: var(--text-color);
+    left: var(--inline-padding-of-input);
+  }
+  /* svg -- size */
+  svg {
+    width: 17px;
+    display: block;
+  }
+  /* styling of close button */
+  .close-btn {
+    border: none;
+    right: var(--inline-padding-of-input);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 0.1em;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--active-color);
+    opacity: 0;
+    visibility: hidden;
+  }
+  /* styling of input */
+  .input {
+    color: var(--input-text-color);
+    width: 100%;
+    margin-inline: min(2em,calc(var(--inline-padding-of-input) + var(--gap)));
+    background: none;
+    border: none;
+  }
+  
+  .input:focus {
+    outline: none;
+  }
+  
+  .input::placeholder {
+    color: var(--text-color)
+  }
+  /* input background change in focus */
+  .input:focus ~ .fancy-bg {
+    border: 1px solid var(--active-color);
+    background: var(--focus-input-bg-color);
+  }
+  /* search icon color change in focus */
+  .input:focus ~ .search {
+    fill: var(--active-color);
+  }
+  /* showing close button when typing */
+  .input:valid ~ .close-btn {
+    opacity: 1;
+    visibility: visible;
+  }
+  /* this is for the default background in input,when selecting autofill options -- you can remove this code if you do not want to override the browser style.  */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+    -webkit-transition-delay: 9999s;
+  }
+  /* .................................................................................................... */
+
+.top-setting h1 {
+    margin: 0;
+    font-size: 29px;
+    font-weight: bold;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    position: relative;
+    left: 12px;
+    top: 8px;
+}
+
+.Bottom-container {
+    flex: 1;
+    
+    background-color:#121b22 ;
+    overflow: scroll;
+}
+
+.Profile-setting {
+    display: flex;
+    align-items: center;
+    color: white;
+    height: 8rem;
+    background-color: #121b22;
+    margin-bottom: -5px;
+    padding: 20px;
+}
+
+.Profile-setting img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+    background-color: #ddd;
+}
+
+.setting-profile h3 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.setting-profile p {
+    margin: 5px 0 0;
+    font-size: 19px;
+    color: #ffffff;
+}
+
+.setting-byn-group {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.icon-container1 {
+    display: flex; 
+    align-items: center;
+    height: 5rem;
+    padding: 6px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.Span{
+  border-bottom: 1px solid #6c747c;
+  padding: 25px 0px;
+  
+  width: 100%;
+}
+.icon-container1:hover {
+    background-color: #2b3942;
+}
+
+.Icons-left1 {
+    display: flex;
+    align-items: center;
+}
+
+.Icons-left1 svg {
+    height: 25px;
+    width: 25px;
+    font-size: 24px;
+    color: #ffffff;
+    margin-right: 20px;
+}
+
+.icon-label1 {
+    font-size: 20px;
+    padding-left: 15px;
+    font-weight: 500;
+    color: #ffffff;
+    flex: 1;
+}
+
+.icon-container1:last-child {
+    border-bottom: none;
+}

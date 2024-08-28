@@ -1,0 +1,57 @@
+.Com-main {
+    height: 100vh;
+    width: 550px;
+    background-color: #121b22;
+}
+
+.com-part1 {
+    height: 10rem;
+    padding: 15px;
+    background-color: #2b3942;
+}
+
+.com-part1 h2 {
+    font-size: 29px;
+    font-family: "Open Sans", sans-serif;
+    padding-left: 20px;
+    color: white;
+}
+
+.new-com {
+    display: flex;
+    height: 50px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.new-com .logo-com {
+    height: 50px;
+    width: 50px;
+    background-color: #02a784;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+}
+
+.new-com .logo-com svg {
+    width: 30px;
+    color: white;
+}
+
+.new-com p {
+    font-size: 25px;
+    position: relative;
+    top: 8px;
+    left: 11px;
+    font-weight: 500;
+    color: white;
+}
+.com-part2{
+    font-size: 25px;
+    text-align: center;
+    padding-top: 25px;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: aliceblue;
+}

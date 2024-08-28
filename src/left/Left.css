@@ -1,0 +1,320 @@
+.Manin-left {
+  width: 550px;
+  height: 100vh;
+}
+
+.Main-left {
+  width: 550px;
+  height: 32vh;
+  background-color: #121b22;
+  color: #6c747c;
+}
+
+.upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px;
+}
+
+.upper h1 {
+  color: white;
+  margin: 0;
+  font-size: 30px;
+}
+
+.Icon-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60px;
+  height: 30px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: #6c747c;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  width: 60px;
+  height: 30px;
+}
+
+.icon:hover {
+  color: white;
+  /* Change icon color on hover */
+}
+
+.left-header {
+  height: 30vh;
+}
+
+.left-Massage {
+  height: 70vh;
+  width: 100%;
+  overflow: scroll;
+}
+
+.left-Massage::-webkit-scrollbar {
+  display: none;
+}
+
+/* ..............................................searchbar....................... */
+/* From Uiverse.io by satyamchaudharydev */
+/* From uiverse.io by @satyamchaudharydev */
+/* removing default style of button */
+
+.form1 button {
+  border: none;
+  background: none;
+  color: #8b8ba7;
+}
+
+/* styling of whole input container */
+/* From Uiverse.io by satyamchaudharydev */
+/* this is a recreation of twitter search in css */
+.form1 {
+  --input-text-color: #fff;
+  --input-bg-color: #283542;
+  --focus-input-bg-color: transparent;
+  --text-color: #949faa;
+  --active-color: #1b9bee;
+  --width-of-input: 200px;
+  --inline-padding-of-input: 1.2em;
+  --gap: 0.9rem;
+}
+
+/* form style */
+.form1 {
+  font-size: 0.9rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  width: var(--width-of-input);
+  position: relative;
+  isolation: isolate;
+  width: 94%;
+  margin: 0px 10px;
+}
+
+/* a fancy bg for showing background and border when focus. */
+.fancy-bg {
+  position: absolute;
+  width: 100%;
+  inset: 0;
+  background: var(--input-bg-color);
+  border-radius: 30px;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+/* label styling */
+label {
+  width: 100%;
+  padding: 0.8em;
+  height: 40px;
+  padding-inline: var(--inline-padding-of-input);
+  display: flex;
+  align-items: center;
+}
+
+.search,
+.close-btn {
+  position: absolute;
+}
+
+/* styling search-icon */
+.search {
+  fill: var(--text-color);
+  left: var(--inline-padding-of-input);
+}
+
+/* svg -- size */
+svg {
+  width: 17px;
+  display: block;
+}
+
+/* styling of close button */
+.close-btn {
+  border: none;
+  right: var(--inline-padding-of-input);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 0.1em;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--active-color);
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* styling of input */
+.input {
+  color: var(--input-text-color);
+  width: 100%;
+  margin-inline: min(2em, calc(var(--inline-padding-of-input) + var(--gap)));
+  background: none;
+  border: none;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input::placeholder {
+  color: var(--text-color)
+}
+
+/* input background change in focus */
+.input:focus~.fancy-bg {
+  border: 1px solid var(--active-color);
+  background: var(--focus-input-bg-color);
+}
+
+/* search icon color change in focus */
+.input:focus~.search {
+  fill: var(--active-color);
+}
+
+/* showing close button when typing */
+.input:valid~.close-btn {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* this is for the default background in input,when selecting autofill options -- you can remove this code if you do not want to override the browser style.  */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+  -webkit-transition-delay: 9999s;
+}
+
+/* ...............................message list ............... */
+.Main-Massage {
+
+  max-width: 550px;
+  background-color: #121b22;
+  border-right: 1px solid #ddd;
+}
+
+.message-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 2px solid #384249;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 0px 5px;
+}
+
+.message-item:hover {
+  background-color: #384249;
+}
+
+.message-avatar {
+  width: 60px;
+  ;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+}
+
+.message-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.message-title {
+  font-size: 25px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 5px;
+  font-family: "Gupter", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: capitalize;
+}
+
+.message-time {
+  font-size: 0.85em;
+  color: #888;
+}
+
+.message-number {
+  background-color: #25d366;
+  color: white;
+  font-size: 0.75em;
+  padding: 2px 6px;
+  border-radius: 50%;
+  text-align: center;
+  align-content: center;
+  margin-top: 5px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  position: relative;
+  left: 2rem;
+  font-family: "Gupter", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.buttons-group{
+  padding: 10px 20px;
+
+}
+.All-button {
+  width: 70px;
+  height:40px;
+  background-color: #384249;
+  color: #fff;
+  border-radius: 50px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.All-button:hover{
+  background-color: #0b332b;
+  color: #007156;
+}
+
+.Unread-button{
+  width: 100px;
+  height: 40px;
+  background-color: #384249;
+  color: #fff;
+  border-radius: 50px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+ left: 0.4rem;
+  overflow: hidden;
+}
+.Unread-button:hover{
+  background-color: #0b332b;
+  color: #007156;
+}
+.All-button.active, .Unread-button.active {
+  background-color: #0b332b;
+  color: #007156; /* Change this to the desired active background color */
+}

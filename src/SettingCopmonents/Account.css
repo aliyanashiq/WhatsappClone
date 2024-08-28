@@ -1,0 +1,72 @@
+.Account-container{
+    width: 550px;
+    height: 100vh;
+    background-color: #121b22;
+    padding: 15px;
+}
+/* Account.css */
+.Accounts-logo{
+    position: relative;
+    left: -2rem;
+    cursor: pointer;
+}
+svg {
+    width: 25px;
+    height: 35px;
+    display: block;
+}
+.top-Accounts{
+    display: flex;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    left: 3rem;
+}
+
+.top-Accounts h1 {
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    left: rem;
+}
+
+
+
+.icon-container01 {
+    background-color: #121b22;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    display: flex;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.icon-container01:hover {
+    background-color: #384249;
+
+}
+
+.Icons-left01 {
+    font-size: 2rem;
+    padding-right: 2rem;
+    color: #ffffff;
+}
+
+.icon-label01 {
+    display: block;
+    font-size: 20px;
+    color: #ffffff;
+    margin: 5px 0;
+}
+
+.icon-container01 h6 {
+    margin: 0;
+    color: transparent; /* H6 is used to align items; you can remove or adjust as needed */
+}

@@ -1,0 +1,12 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.Main-container{
+  display: flex;
+  position: fixed;
+}
+.Right-container{
+  width: 755px;
+}
